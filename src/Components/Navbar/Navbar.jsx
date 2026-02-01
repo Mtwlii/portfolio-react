@@ -1,17 +1,19 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 import Style from "./Navbar.module.css";
-import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav className={`navbar navbar-expand-lg ${Style["nav-background"]}`}>
+      <nav
+        className={`navbar navbar-expand-lg ${Style["nav-background"]} fixed-top`}
+      >
         <div className="container px-2 py-3">
-          <NavLink
+          <Link
             className="navbar-brand text-uppercase fw-bold text-white "
             to="/startFramework"
           >
             Start Framework
-          </NavLink>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -27,7 +29,7 @@ const Navbar = () => {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink
-                  className="nav-link text-uppercase text-white fw-bold pb-3 ps-2"
+                  className="nav-link text-uppercase text-white fw-bold ms-2"
                   aria-current="page"
                   to="/startFramework/about"
                 >
@@ -36,7 +38,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item ">
                 <NavLink
-                  className="nav-link text-uppercase text-white fw-bold pb-3 ps-2"
+                  className="nav-link text-uppercase text-white fw-bold  ms-2"
                   to="/startFramework/portfolio"
                 >
                   Portfolio
@@ -44,7 +46,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className="nav-link text-uppercase text-white fw-bold ps-2"
+                  className="nav-link text-uppercase text-white fw-bold ms-2"
                   to="/startFramework/contact"
                 >
                   Contact

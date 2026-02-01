@@ -1,0 +1,84 @@
+.active {
+    background-color: #1abc9c;
+    display: inline-block;
+    color: #fff;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #1abc9c);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-filter: drop-shadow(0 0 0.75rem #1abc9c);
+    -moz-filter: drop-shadow(0 0 0.75rem #1abc9c);
+    -ms-filter: drop-shadow(0 0 0.75rem #1abc9c);
+    -o-filter: drop-shadow(0 0 0.75rem #1abc9c);
+
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+li .nav-link {
+    padding: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white ;
+}
+
+.right {
+    height: 5px;
+    width: 100px;
+}
+
+.left {
+    height: 5px;
+    width: 100px;
+}
+
+
+.layer {
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+.layer::before {
+    content: "";
+    background-color: #1abc9c;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "+";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 7px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.layer:hover::before {
+    opacity: .8;
+}
