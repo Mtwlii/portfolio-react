@@ -23,7 +23,33 @@
     margin-top: 7.5rem;
 }
 
-/* img{
-    width: 100%;
-    height: 100%;
-}    */
+/****************************/
+input {
+    cursor: text;
+}
+
+
+
+
+input:focus {
+    outline: none ! important;
+    box-shadow: none ! important;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+/*********/
+
+.form {
+    margin-top: 5rem !important;
+
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 100% !important;
+    }
+}

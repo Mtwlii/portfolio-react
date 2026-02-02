@@ -8,7 +8,7 @@ const Main = () => {
         <div className="container vh-100  d-flex justify-content-center align-items-center text-white">
           <div className="row">
             <div className="col-md-12 d-flex justify-content-center align-items-center">
-              <img src={Avatar} alt="avatar" className="w-50" />
+              <img src={Avatar} alt="avatar" className={`${Style["we"]}`} />
             </div>
             <div className="col-md-12 d-flex justify-content-center align-items-center">
               <h2>Start Framework</h2>

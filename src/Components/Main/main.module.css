@@ -1,10 +1,12 @@
 .bg-color {
     background-color: #1abc9c;
 }
-img {
+
+.we{
     width: 250px;
     height: 250px;
 }
-h2{
-    color:white;
+
+h2 {
+    color: white;
 }
