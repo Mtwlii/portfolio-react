@@ -6,11 +6,11 @@ import Main from '../Main/Main';
 
 const Layout = () => {
   return (
-    <>
+    <div className='vh-100'>
       <Navbar />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 }
 
